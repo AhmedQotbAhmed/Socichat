@@ -14,7 +14,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
-        android:text="Didn't receive OTP?"
+        android:text="@string/didn_t_receive_otp"
         android:textAlignment="center"
         android:textColor="@android:color/darker_gray"
         android:textSize="14sp"
@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
 
         android:layout_marginTop="16dp"
-        android:text="requestFor new one on 1:00 Min."
+        android:text="@string/requestfor_new_one_on_1_00_min"
         android:textAlignment="inherit"
         android:textColor="@android:color/darker_gray"
         android:textSize="14sp"
@@ -55,8 +55,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:autoText="false"
-        android:text="Mobile Verification"
+        android:text="@string/mobile_verification"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
         android:textSize="24sp"
@@ -74,7 +73,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
-        android:text="Please Enter 4-Digit OTP Wich You Received On Your Last Entered Mobile Number"
+        android:text="@string/please_enter_4_digit_otp_wich_you_received_on_your_last_entered_mobile_number"
         android:textAlignment="center"
         android:textColor="@android:color/darker_gray"
         android:textSize="14sp"
@@ -92,7 +91,8 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="@+id/leable_text"
         app:layout_constraintStart_toStartOf="@+id/leable_text"
-        app:layout_constraintTop_toBottomOf="@+id/leable_text" />
+        app:layout_constraintTop_toBottomOf="@+id/leable_text"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/btn_verify"
@@ -101,7 +101,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="384dp"
         android:background="@color/colorPrimary"
-        android:text="Verify"
+        android:text="@string/verify"
         android:textColor="@android:color/background_light"
         android:textSize="14sp"
         android:textStyle="bold|italic"

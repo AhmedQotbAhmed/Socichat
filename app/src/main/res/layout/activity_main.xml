@@ -29,7 +29,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
-        android:text="Please Enter Your Mobile Number To Receive A Verification Code For Login"
+        android:text="@string/please_enter_your_mobile_number_to_receive_a_verification_code_for_login"
         android:textAlignment="center"
         android:textColor="@android:color/darker_gray"
         android:textSize="14sp"
@@ -44,11 +44,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Mobile Number"
+        android:hint="@string/mobile_number"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="@+id/leable_text"
         app:layout_constraintStart_toStartOf="@+id/leable_text"
-        app:layout_constraintTop_toBottomOf="@+id/leable_text" />
+        app:layout_constraintTop_toBottomOf="@+id/leable_text"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/btn_send_otp"
