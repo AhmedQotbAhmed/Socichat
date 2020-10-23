@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Socichat</string>
+    <string name="resend"><u>Resend</u></string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="send_otp">Send OTP</string>
 </resources>
