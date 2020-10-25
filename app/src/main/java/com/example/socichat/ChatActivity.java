@@ -1,8 +1,10 @@
 package com.example.socichat;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import com.example.socichat.Fragment.FragmentAdapter;
