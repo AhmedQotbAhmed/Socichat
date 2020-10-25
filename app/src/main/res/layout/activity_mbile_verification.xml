@@ -5,6 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_verifi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/leable_text2"
@@ -54,7 +62,7 @@
         android:id="@+id/headline_verifi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:text="@string/mobile_verification"
         android:textAlignment="center"
         android:textColor="@color/colorAccent"
@@ -63,7 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_verifi" />
 
     <TextView
         android:id="@+id/leable_text"
@@ -82,17 +90,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/headline_verifi" />
 
-    <EditText
+    <com.alimuzaffar.lib.pin.PinEntryEditText
         android:id="@+id/edt_verific_code"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
+        android:cursorVisible="false"
+        android:digits="1234567890"
         android:inputType="number"
+        android:maxLength="4"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        app:pinBackgroundDrawable="@drawable/bg_pin"
+        app:pinLineStroke="2dp"
+        app:pinLineStrokeSelected="4dp"
+        app:pinBackgroundIsSquare="true"
+        android:layoutDirection="ltr"
+        app:pinTextBottomPadding="@dimen/space"
         app:layout_constraintEnd_toEndOf="@+id/leable_text"
         app:layout_constraintStart_toStartOf="@+id/leable_text"
         app:layout_constraintTop_toBottomOf="@+id/leable_text"
-        android:autofillHints="" />
+        android:autofillHints=""
+    />
+
+
 
     <Button
         android:id="@+id/btn_verify"
