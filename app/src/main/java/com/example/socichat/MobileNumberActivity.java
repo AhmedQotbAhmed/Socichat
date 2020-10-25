@@ -8,12 +8,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MobileNumberActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_mobile_number);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
 
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             switch (v.getId()){
                 case R.id.btn_send_otp:
-                    Intent outIntent = new Intent(MainActivity.this, MobileVerification.class);
+                    Intent outIntent = new Intent(MobileNumberActivity.this, MobileVerification.class);
                     startActivity(outIntent);
             }
 
