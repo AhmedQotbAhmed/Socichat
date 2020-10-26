@@ -8,8 +8,8 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profile_image"
-        android:layout_width="70dp"
-        android:layout_height="82dp"
+        android:layout_width="60dp"
+        android:layout_height="72dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="4dp"
         android:src="@android:color/black"
@@ -40,7 +40,7 @@
         android:padding="2dp"
         android:text="hello, how are u?"
         android:textColor="@android:color/darker_gray"
-        android:textSize="14sp"
+        android:textSize="12sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="@+id/txv_chat_name"
         app:layout_constraintStart_toStartOf="@+id/txv_chat_name"
@@ -60,7 +60,6 @@
         android:text="2"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
-
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.877"
@@ -77,7 +76,7 @@
         android:padding="2dp"
         android:text="2 min ago"
         android:textColor="@android:color/darker_gray"
-        android:textSize="12sp"
+        android:textSize="10sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="@+id/txv_massege_chat"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,7 +90,7 @@
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="1dp"
         android:background="#BF9C9C9C"
@@ -99,5 +98,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/profile_image"
-        app:layout_constraintTop_toBottomOf="@+id/txv_massege_chat" />
+        app:layout_constraintTop_toBottomOf="@+id/txv_massege_chat"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
