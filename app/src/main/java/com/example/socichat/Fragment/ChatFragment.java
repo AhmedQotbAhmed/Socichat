@@ -24,7 +24,7 @@ import static android.content.Context.SEARCH_SERVICE;
 
 public class ChatFragment extends Fragment {
     RecyclerView recyclerView;
-    private SearchView searchView;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -43,29 +43,4 @@ public class ChatFragment extends Fragment {
 
     }
 
-    @Override
-    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
-        inflater.inflate(R.menu.menu_search, menu);
-        super.onCreateOptionsMenu(menu, inflater);
-        SearchManager searchManager = (SearchManager) getContext().getSystemService(SEARCH_SERVICE);
-        searchView = (SearchView) menu.findItem(R.id.action_search)
-                .getActionView();
-        searchView.setBackgroundColor((0xFFF));
-        searchView.setSearchableInfo(searchManager
-                .getSearchableInfo(getActivity().getComponentName()));
-        searchView.setMaxWidth(Integer.MAX_VALUE);
-        setHasOptionsMenu(true);
-        searchView.setQueryHint("Search Product");
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_search) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }
